@@ -1,0 +1,8 @@
+{
+    "punssh": "PunSSH",
+    "destination": "Destination Host",
+    "name": "Tunnel Name",
+    "status": "Tunnel Status",
+    "title": "PunSSH Report",
+    "pubkey": "SSH Public Key"
+}

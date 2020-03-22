@@ -1,0 +1,13 @@
+#!/bin/sh
+
+# Skip manual check
+if [ "${1}" = 'manualcheck' ]; then
+	echo 'Manual check: skipping'
+	exit 0
+fi
+
+DIR=$(dirname "${0}")
+
+mkdir -p "${DIR}/cache"
+
+/Library/PunSSH/Bin/punssh-status > "${DIR}/cache/punssh.json"

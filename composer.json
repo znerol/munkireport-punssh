@@ -1,0 +1,8 @@
+{
+    "name": "znerol/munkireport-punssh",
+    "description": "PunSSH status module for munkireport.",
+    "license": "MIT",
+    "require": {
+        "php":"^7.0"
+    }
+}
