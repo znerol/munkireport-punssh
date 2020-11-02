@@ -31,6 +31,9 @@ class Punssh_model extends \Model
             throw new Exception("Error Processing Request: No JSON file found", 1);
         }
 
+        // Nuke previous data
+        $this->deleteWhere('serial_number=?', $this->serial_number);
+
         // Matches strings of the form "Tunnel(destination:name)".
         $service_pattern = '|^Tunnel\((?<destination>[^:]+):(?<name>[^\)]+)\)$|';
 
